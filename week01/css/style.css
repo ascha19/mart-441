@@ -1,9 +1,18 @@
-@keyframes ufo {
-  from {
-    right: 0%;
+@-moz-keyframes ufo {
+  0% {
+    left: 0;
   }
-  to {
-    right: 100%;
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes ufo {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
   }
 }
 
@@ -29,7 +38,9 @@ p {
 }
 
 a#rotator {
-  animation: ufo 10s;
+  position: absolute;
+  left: 100%;
+  -moz-animation: ufo 20s;
 }
 
 .background {
