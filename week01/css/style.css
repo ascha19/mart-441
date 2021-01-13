@@ -2,9 +2,32 @@ body {
   background-color: rgb(131, 212, 252);
 }
 
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
 .background {
   background-image: url("../images/galaxy-wallpaper.png");
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.bubble {
+  width: 65%;
+  margin: auto;
+  background: rgb(230, 254, 255);
+  border-color: white;
+  border-width: thick;
+  opacity: 75%;
+  border-radius: 20px;
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: 25px;
+  font-size: 18px;
+  color: navy;
 }
