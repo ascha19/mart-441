@@ -1,3 +1,12 @@
+@keyframes ufo {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
 body {
   background-color: rgb(131, 212, 252);
 }
@@ -8,6 +17,19 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+p {
+  text-indent: 35px;
+}
+
+a#rotator {
+  animation: ufo 10s;
 }
 
 .background {
@@ -24,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   border-width: thick;
   opacity: 75%;
   border-radius: 20px;
-  padding: 15px;
+  padding: 20px;
   padding-left: 35px;
   padding-right: 35px;
   margin-top: 25px;
