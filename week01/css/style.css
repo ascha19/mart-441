@@ -1,17 +1,26 @@
-@-moz-keyframes ufo {
-  0% {
+@keyframes ufo {
+  from {
     left: 0;
   }
-  100% {
+  to {
     left: 100%;
   }
 }
 
-@keyframes ufo {
-  0% {
+@-moz-keyframes ufo {
+  from {
     left: 0;
   }
-  100% {
+  to {
+    left: 95%;
+  }
+}
+
+@-webkit-keyframes ufo {
+  from {
+    left: 0;
+  }
+  to {
     left: 100%;
   }
 }
@@ -38,9 +47,17 @@ p {
 }
 
 a#rotator {
-  position: absolute;
   left: 100%;
+  position: absolute;
+  animation: ufo 20s;
   -moz-animation: ufo 20s;
+  -webkit-animation: ufo 20s;
+}
+
+a#rotator img {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
 }
 
 .background {
@@ -63,4 +80,8 @@ a#rotator {
   margin-top: 25px;
   font-size: 18px;
   color: navy;
+}
+
+.small {
+  width: 25%;
 }
