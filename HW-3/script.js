@@ -89,19 +89,19 @@ else if (option == 2 && continue2 == "Use sticks") {
     document.getElementById("option3").innerHTML = "Congrats";
   }
   else if (option == 1 && continue1 == "Return") {
-    document.getElementById("story").innerHTML = "this";
-    document.getElementById("option1").innerHTML = "sss";
-    document.getElementById("option2").innerHTML = "sss";
-    document.getElementById("option3").innerHTML = "sss";
+    document.getElementById("story").innerHTML = "Hello again, being. Are you a pig or wolf?";
+    document.getElementById("option1").innerHTML = "Pig";
+    document.getElementById("option2").innerHTML = "Wolf";
+    document.getElementById("option3").innerHTML = "Neither";
   }
   else if (option == 2 && continue2 == "Leave") {
     closeWindow();
   }
   else if (option == 3 && continue3 == "Return") {
-    document.getElementById("story").innerHTML = "this";
-    document.getElementById("option1").innerHTML = "sss";
-    document.getElementById("option2").innerHTML = "sss";
-    document.getElementById("option3").innerHTML = "sss";
+    document.getElementById("story").innerHTML = "Hello again, being. Are you a pig or wolf?";
+    document.getElementById("option1").innerHTML = "Pig";
+    document.getElementById("option2").innerHTML = "Wolf";
+    document.getElementById("option3").innerHTML = "Neither";
   }
   else if (option == 1 && continue1 == "Go home") {
     document.getElementById("story").innerHTML = "You went back to your den tired, hungry, and irritated.";
