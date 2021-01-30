@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An old-school text adventure game about the fairytale 'The Three Little Pigs.'">
+    <meta name="author" content="Alec S">
+
+    <title>Wolf & Pig</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Wolf & Pig</h1>
+
+      <div id="story">
+      <p>Hello, being. Are you a pig or wolf?</p>
+      </div>
+
+      <div id="options" class="grid">
+        <button class="button choice1" onclick="storyInitiate(1)">Pig</button>
+        <button class="button choice2" onclick="storyInitiate(2)">Wolf</button>
+        <button class="button choice3" onclick="storyInitiate(3)">Neither</button>
+      </div>
+
+    <div id="changeme">Update me</div>
+
+    <script>
+    document.getElementById("changeme").innerHTML = "I have been changed";
+    </script>
+
+    <p>🐺 ₍ᐢ･⚇･ᐢ₎ ₍ᐢ･⚇･ᐢ₎ ₍ᐢ･⚇･ᐢ₎ 🐺</p>
+
+  </body>
+
+</html>
