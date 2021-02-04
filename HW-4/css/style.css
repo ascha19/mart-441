@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  text-align: center;
+  font-family: 'VPPixel', sans-serif;
+  color: limegreen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PixelBug', serif;
+  color: white;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+p {
+  font-family: 'VPPixel', sans-serif;
+  color: limegreen;
+}
+
+div {
+  color: limegreen;
+}
+
+.grid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: black;
+  border-color: limegreen;
+  font-family: 'VPPixel', sans-serif;
+  color: limegreen;
+}
+
+.button:hover {
+  border-color: white;
+}

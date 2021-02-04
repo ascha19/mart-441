@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "PixelBug";
+  src: url("../fonts/Pixel-Bug.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "VPPixel";
+  src: url("../fonts/VPPixel-Simplified.otf") format('opentype');
+}
