@@ -19,6 +19,11 @@ p {
   color: limegreen;
 }
 
+img {
+  max-width: 100%;
+  height: 300px;
+}
+
 div {
   color: limegreen;
 }
