@@ -15,15 +15,15 @@ function getOption1() {
     document.getElementById("option2").style.display="block";
     document.getElementById("submit2").style.display="block";
 
-    myStory.InnerHTML = "You pick up the phone and examine it. The screen is smashed but it is otherwise in tact and there is a piece of paper with a number on it behind the clear phone case: 0396. Suddenly, it rings. You can: >Answer or >Leave it alone.";
+    myStory.innerHTML = "You pick up the phone and examine it. The screen is smashed but it is otherwise in tact and there is a piece of paper with a number on it behind the clear phone case: 0396. Suddenly, it rings. You can: >Answer or >Leave it alone.";
   }
 
   else if(myOption === "Get up and leave") {
-    myStory.InnerHTML = "You stand and make your way into the street. You're now standing in the middle of the road. You can >Go left or >Go right.";
+    myStory.innerHTML = "You stand and make your way into the street. You're now standing in the middle of the road. You can >Go left or >Go right.";
   }
 
   else {
-    myStory.InnerHTML = "Invalid answer. Type either 'Pick up cellphone' or 'Get up and leave'.";
+    myStory.innerHTML = "Invalid answer. Type either 'Pick up cellphone' or 'Get up and leave'.";
   }
 }
 
@@ -39,15 +39,15 @@ function getOption2() {
     document.getElementById("option3").style.display="block";
     document.getElementById("submit3").style.display="block";
 
-    myStory.InnerHTML = "You answer the phone. Before you can say a word, a terrified scream erupts from the speaker that makes you shudder; then the line goes dead. You can >Investigate or >Ignore it.";
+    myStory.innerHTML = "You answer the phone. Before you can say a word, a terrified scream erupts from the speaker that makes you shudder; then the line goes dead. You can >Investigate or >Ignore it.";
   }
 
   else if (myOption2 === "Leave it alone") {
-    myStory.InnerHTML = "Instead of answering, you silence the phone and place it back on the bench. You lay back down and prepare to sleep again. You can >Dream or >Not dream.";
+    myStory.innerHTML = "Instead of answering, you silence the phone and place it back on the bench. You lay back down and prepare to sleep again. You can >Dream or >Not dream.";
   }
 
   else {
-    myStory.InnerHTML = "Invalid answer. Type either 'Answer' or 'Leave it alone'.";
+    myStory.innerHTML = "Invalid answer. Type either 'Answer' or 'Leave it alone'.";
   }
 
 }
