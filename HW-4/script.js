@@ -29,6 +29,7 @@ function getOption1() {
 
 function getOption2() {
   var myOption2 = document.getElementById("option2").value;
+  var myStory = document.getElementById("story");
 
   if (myOption2 === "Answer") {
 
