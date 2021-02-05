@@ -2,12 +2,12 @@ body {
   background-color: black;
   text-align: center;
   font-family: 'VPPixel', sans-serif;
-  color: limegreen;
+  color: red;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PixelBug', serif;
-  color: white;
+  color: red;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 
 p {
   font-family: 'VPPixel', sans-serif;
-  color: limegreen;
+  color: red;
 }
 
 img {
@@ -25,7 +25,7 @@ img {
 }
 
 div {
-  color: limegreen;
+  color: red;
 }
 
 .grid {
@@ -35,11 +35,18 @@ div {
 
 .button {
   background-color: black;
-  border-color: limegreen;
+  border-color: white;
   font-family: 'VPPixel', sans-serif;
-  color: limegreen;
+  color: white;
 }
 
 .button:hover {
+  border-color: red;
+}
+
+.textbox {
+  background-color: black;
   border-color: white;
+  font-family: 'VPPixel', sans-serif;
+  color: white;
 }
