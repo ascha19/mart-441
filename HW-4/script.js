@@ -4,7 +4,7 @@ console.dir(document);
 
 //Storyline: Wake up and find phone. Storyline 1: Phone rings, you answer, investigate, and get your soul sucked into phone. Storyline 2: You ignore the creepy shit and go back to sleep, dream, and die. Storyline 3: You try to go home, turn left, and get hit by a car. Storyline 4: You try to go home, turn right, and sucked into a portal to hell.
 
-//First set of options - Split to Storyline 1 or Storyline 3.
+//First set of options - Split to Storyline 1 or Storyline 3/4.
 function getOption1() {
   var myOption = document.getElementById("option").value;
   var myStory = document.getElementById("story");
@@ -52,7 +52,7 @@ function getOption2() {
   }
 
   else if (myOption2 === "Leave it alone") {
-    myStory.innerHTML = "Instead of answering, you silence the phone and place it back on the bench. You lay back down and prepare to sleep again. You can >Dream or >Not dream.";
+    myStory.innerHTML = "Instead of answering, you silence the phone and place it back on the bench. <br>You lay back down and prepare to sleep again. <br>You can: <br>>Dream <br>>Not dream.";
   }
 
   else {
@@ -77,7 +77,14 @@ function getOption3() {
   }
 
   else if (myOption3 === "Ignore it") {
-    myStory.innerHTML = "You decide to pursue ignorant bliss. <br>Shuddering, you place the phone back where you found it. <br><br>You can: <br>>Leave <br>>Lie back down";
+
+    document.getElementById("option3").style.display="none";
+    document.getElementById("submit3").style.display="none";
+
+    document.getElementById("option7").style.display="block";
+    document.getElementById("submit7").style.display="block";
+
+    myStory.innerHTML = "You decide to pursue ignorant bliss. <br>Shuddering, you place the phone back where you found it. <br><br>You can: <br>>Get up and leave <br>>Lie back down";
   }
 
   else {
@@ -104,7 +111,14 @@ function getOption4() {
   }
 
   else if (myOption4 === "Give up") {
-    myStory.innerHTML = "This is too much effort and too much weird. <br>You put the phone back where you got it and consider your options. <br><br>You can: <br>>G <br>L";
+
+    document.getElementById("option4").style.display="none";
+    document.getElementById("submit4").style.display="none";
+
+    document.getElementById("option7").style.display="block";
+    document.getElementById("submit7").style.display="block";
+
+    myStory.innerHTML = "This is too much effort and too much weird. <br>You put the phone back where you got it and consider your options. <br><br>You can: <br>>Get up and leave <br>Lie back down";
   }
 
   else {
@@ -112,7 +126,7 @@ function getOption4() {
   }
 }
 
-//Final option - game restart after death
+//Fifth/Final option - game restart after death
 function restartGame() {
   var myOption5 = document.getElementById("option5").value;
   var myStory = document.getElementById("story");
@@ -127,8 +141,7 @@ function restartGame() {
     document.getElementById("option").style.display="block";
     document.getElementById("submit").style.display="block";
 
-    //This text is not correct vvv
-    myStory.innerHTML = document.getElementById("story").style.display;
+    myStory.innerHTML = "";
   }
 
   else {
@@ -136,6 +149,7 @@ function restartGame() {
   }
 }
 
+//Sixth set of options - Split to Storyline 3 and 4 and both endings
 function getOption6() {
   var myOption6 = document.getElementById("option6").value;
   var myStory = document.getElementById("story");
@@ -168,5 +182,67 @@ function getOption6() {
 
   else {
     myStory.innerHTML = "Invalid answer. Type either 'Go left' or 'Go right'.";
+  }
+}
+
+//Seventh - Splits to Storyline 2 or Storyline 3/4
+function getOption7() {
+  var myOption7 = document.getElementById("option7").value;
+  var myStory = document.getElementById("story");
+
+  if (myOption7 === "Get up and leave") {
+    document.getElementById("option7").style.display="none";
+    document.getElementById("submit7").style.display="none";
+
+    document.getElementById("option6").style.display="block";
+    document.getElementById("submit6").style.display="block";
+
+    myStory.innerHTML = "You stand and make your way into the street. <br>You're now standing in the middle of a cracked, asphalt road. <br><br>You can: <br>>Go left <br>>Go right";
+    }
+
+  else if (myOption7 === "Lie back down") {
+
+    document.getElementById("option7").style.display="none";
+    document.getElementById("submit7").style.display="none";
+
+    document.getElementById("option8").style.display="block";
+    document.getElementById("submit8").style.display="block";
+
+    myStory.innerHTML = "You get comfortable on the bench you're sitting on and lay down. <br><br>You can: <br>>Dream <br>>Not dream";
+  }
+
+  else {
+    myStory.innerHTML = "Invalid answer. Type either 'Get up and leave' or 'Lie back down'.";
+  }
+}
+
+//Eighth - Storyline 2 continues and ends
+function getOption8() {
+  var myOption8 = document.getElementById("option8").value;
+  var myStory = document.getElementById("story");
+
+  if (myOption8 === "Dream") {
+
+    document.getElementById("image").src = "./imgs/creepy-figure.jpg"
+
+    document.getElementById("option8").style.display="none";
+    document.getElementById("submit8").style.display="none";
+
+    document.getElementById("option5").style.display="block";
+    document.getElementById("submit5").style.display="block";
+
+      myStory.innerHTML = "You close your eyes and slip into a peaceful sleep. <br>You were hoping it would be peaceful, at least, but it wasn't. <br>You are in a realm of only darkness when a misty figure appears. <br>They grasp your shoulder and the final sound you hear is your own blood-curdling cry.";
+    }
+
+  else if (myOption8 === "Not dream") {
+
+    document.getElementById("option8").style.display="block";
+    document.getElementById("submit8").style.display="block";
+
+    myStory.innerHTML = "You must dream. <br><br>>Dream <br>>D̷̤̅r̴͍̋e̸̡̐a̷͝ͅm̵̠̏ <br>>D̷̡̘̪̤̹̹͔̈́̽͗͝r̶̯̃e̶̠͉̓̈́̄͑̾̌̓̓å̴̩̗m̷̥͛͒̀͊́̀̕ <br>>D̵̛̲̪͆̾͘r̷̡̪̙͎͍̥͍̳̦̪̗̐͛͐͜ͅe̴̡̳͓̯̤̫̲̜̯͈̳̳̼̘̘͌̋͊͐̍̈́̈́͌̚͝͝͠a̶̧̨̟͈͇͚̦̼̱̹͇̒̀͘m̵̢̨̨̧̬̖̺̤̺͙̩̹͊̾͜ͅ";
+  }
+
+  else {
+    myStory.innerHTML = "Invalid answer. Type either 'Dream' or 'Not dream'.";
   }
 }
