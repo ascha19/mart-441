@@ -52,6 +52,13 @@ function getOption2() {
   }
 
   else if (myOption2 === "Leave it alone") {
+
+    document.getElementById("option2").style.display="none";
+    document.getElementById("submit2").style.display="none";
+
+    document.getElementById("option8").style.display="block";
+    document.getElementById("submit8").style.display="block";
+
     myStory.innerHTML = "Instead of answering, you silence the phone and place it back on the bench. <br>You lay back down and prepare to sleep again. <br>You can: <br>>Dream <br>>Not dream.";
   }
 
@@ -133,15 +140,8 @@ function restartGame() {
 
   if (myOption5 === "Restart") {
 
-    document.getElementById("image").src = "./imgs/spooky-bench.jpg"
+    document.location.reload();
 
-    document.getElementById("option5").style.display="none";
-    document.getElementById("submit5").style.display="none";
-
-    document.getElementById("option").style.display="block";
-    document.getElementById("submit").style.display="block";
-
-    myStory.innerHTML = "";
   }
 
   else {
