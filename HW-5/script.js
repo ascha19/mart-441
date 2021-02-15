@@ -20,7 +20,7 @@ function randomizedImage() {
 
   var matchingImagesPath = ["./imgs/aries.jpg", "./imgs/taurus.jpg", "./imgs/gemini.jpg", "./imgs/cancer.jpg", "./imgs/leo.jpg", "./imgs/virgo.jpg", "./imgs/libra.jpg", "./imgs/scorpio.jpg", "./imgs/sag.jpg", "./imgs/capricorn.jpg", "./imgs/aquarius.jpg", "./imgs/pisces.jpg"];
 
-  var count = [0,0];
+  var count = [0,0,0,0,0,0,0,0,0,0,0,0];
 
   while(matchingImages.length < 12) {
 
