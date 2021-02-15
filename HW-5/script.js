@@ -10,11 +10,10 @@ var matchingImages = new Array();
 
 function cardBacks() {
 
-  randomizedImage() {
+  randomizedImage();
     for(var i = 0; i <imageTags.length; i++) {
       document.getElementById(imageTags[i]).src= imageBackPath;
     }
-  }
 }
 
 function randomizedImage() {
