@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(95, 74, 124);
+  color: rgb(224, 199, 77);
+}
+
+img {
+  max-width: 100%;
+  width: 50%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.table{
+	width: 100%;
+  padding: 50px;
+}
+
+.tableCell {
+	border: 1px solid rgb(224, 199, 77);
+	display: inline-block;
+	padding: 5px;
+}
