@@ -9,10 +9,6 @@ var imageBackPath = "./imgs/nebula-back.jpg";
 //Varialble for numbers
 var numberUno = -1;
 var numberDos = -1;
-var numberTres = -1;
-var numberCuatro = -1;
-var numberCinco = -1;
-var numberSeis = -1;
 
 //Variables for amount of moves made and final score
 var move = 0;
@@ -51,26 +47,45 @@ function randomizedImage() {
   }
 }
 
-//Function to flip cards
+//Function to flip cards and add score
 function flipCard(number) {
   document.getElementById(imageTags[number]).src= matchingImages[number];
+
+  if(numberUno >= 0) {
+    numberDos = number;
+    document.getElementById(imageTags[number]).src = matchingImages[numberDos];
+  }
+  else if(numberUno < 0) {
+    numberUno = number;
+    document.getElementById(imageTags[numberUno]).src = matchingImages[numberUno];
+  }
+
+  if(matchingImages[numberDos] != actualImages[numberUno] && numberUno >= 0 && numberDos >=0) {
+    move++;
+    setTimeout(goodbyeCards, 1000);
+  }
+  else if(matchingImages[numberDos] == matchingImages[numberUno] && numberUno >= 0 && numberDos >= 0) {
+    move++;
+    foundAllMatches++;
+
+    numberUno = -1;
+    numberDos = -1;
+
+    if(foundAllMatches == matchingImages.length/2) {
+      player.move = move;
+      localStorage.setItem("readyPlayerOne", JSON.stringify(player));
+      window.location = "finalscreen.html";
+    }
+  }
 }
 
 //Function to make images disappear at end of game
 function goodbyeCards() {
   document.getElementById(imageTags[numberUno]).src = imageBackPath;
   document.getElementById(imageTags[numberDos]).src = imageBackPath;
-  document.getElementById(imageTags[numberTres]).src = imageBackPath;
-  document.getElementById(imageTags[numberCuatro]).src = imageBackPath;
-  document.getElementById(imageTags[numberCinco]).src = imageBackPath;
-  document.getElementById(imageTags[numberSeis]).src = imageBackPath;
 
   numberUno = -1;
   numberDos = -1;
-  numberTres = -1;
-  numberCuatro = -1;
-  numberCinco = -1;
-  numberSeis = -1;
 }
 
 //Player information; add to JSON from player info page and pull info from JSON at end of game
