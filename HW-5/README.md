@@ -9,3 +9,5 @@ Finally, I combed through my entire code to fix any syntax errors I could find a
 # Issues
 
 I did struggle with messing up a piece of code here and there but it was mainly because I mixed up the names of my functions or misspelled something. Other than that, the coding went smoothly.
+
+Oh, also the code doesn't work and I'm not sure why. Everything looks fine to me; it might just be an issue of my code randomly breaking without me messing with anything again. Hopefully it works when it's being graded!
