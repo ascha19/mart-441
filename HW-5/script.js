@@ -72,8 +72,8 @@ function flipCard(number) {
     numberDos = -1;
 
     if(foundAllMatches == matchingImages.length/2) {
-      player.move = move;
-      localStorage.setItem("readyPlayerOne", JSON.stringify(player));
+      playerInfo.move = move;
+      localStorage.setItem("readyPlayerOne", JSON.stringify(playerInfo));
       window.location = "finalscreen.html";
     }
   }
@@ -94,11 +94,11 @@ function thisIsPlayer() {
   var lastName = document.getElementById("playerLastName").value;
   var age = document.getElementById("playerAge").value;
 
-  player.firstname = firstName;
-  player.lastname = lastName;
-  player.age = age;
+  playerInfo.firstname = playerFirstName;
+  playerInfo.lastname = playerLastName;
+  playerInfo.age = playerAge;
 
-  localStorage.setItem("readyPlayerOne", JSON.stringify(player));
+  localStorage.setItem("readyPlayerOne", JSON.stringify(playerInfo));
   window.location = "index.html";
 }
 
