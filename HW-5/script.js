@@ -49,7 +49,7 @@ function randomizedImage() {
 
 //Function to flip cards and add score
 function flipCard(number) {
-  document.getElementById(imageTags[number]).src= matchingImages[number];
+  //document.getElementById(imageTags[number]).src= matchingImages[number];
 
   if(numberUno >= 0) {
     numberDos = number;
@@ -60,7 +60,7 @@ function flipCard(number) {
     document.getElementById(imageTags[numberUno]).src = matchingImages[numberUno];
   }
 
-  if(matchingImages[numberDos] != actualImages[numberUno] && numberUno >= 0 && numberDos >=0) {
+  if(matchingImages[numberDos] != matchingImages[numberUno] && numberUno >= 0 && numberDos >=0) {
     move++;
     setTimeout(goodbyeCards, 1000);
   }
@@ -105,7 +105,7 @@ function thisIsPlayer() {
 function readyPlayerOne() {
   var playerInformation = localStorage.getItem("readyPlayerOne");
   playerInfo = JSON.parse(playerInformation);
-  var info = "Player: " + playerInfo.playerFirstName + " " + playerInfo.playerLastName + ", " + playerInfo.age + "<br>" + "Moves: " + playerInfo.score;
+  var info = "Player: " + playerInfo.playerFirstName + " " + playerInfo.playerLastName + ", " + playerInfo.age + "<br>" + "Moves: " + playerInfo.move;
   if(document.getElementById("gameFinish") != null) {
     document.getElementById("gameFinish").innerHTML = info;
   }
