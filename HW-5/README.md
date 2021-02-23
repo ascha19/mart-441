@@ -1,13 +1,7 @@
 # Summary
 
-The first thing I did this week was copy all the code that I had done from last week's repo to this week's. I probably didn't have to do this but I like to stay organized by week, so I did it more for my own organization purposes than anything.
-
-After that, I moved onto making the player info page. First, I had to created a new HTML page, then I made divs that held the text boxes first and last names and age, and a button to submit them; I also set up a third HTML page for the final screen of the game. Then I created all the other variables needed to make functions to create and get information from the JSON, then created said functions. I took a break from the JavaScript at that point and went to my final screen HTML to set it up and and add an onload for it to be able to call the game's final information at the end. I went back to the JavaScript one more time to add code to the card flipping function that allowed attempts to be counted and that would flip the cards back around.
-
-Finally, I combed through my entire code to fix any syntax errors I could find and fix them, and change anything that I didn't like before committing my final changes to GitHub.
+This week was the initial setup of a memory card game. The original idea I had was to use tarot cards but then I decided that would be too many cards to work with for the start of the project. I settled for an easier idea, the twelve zodiac constellations. I found an image that included all of them online and then I cropped the image twelve times to make each of the individual 1x1 inch cards; then I found a pink nebula image that I thought would look good with the dusky purple background and yellow font colors that I wanted to use, and cropped it down as well.
 
 # Issues
 
-I did struggle with messing up a piece of code here and there but it was mainly because I mixed up the names of my functions or misspelled something. Other than that, the coding went smoothly.
-
-Oh, also the code doesn't work and I'm not sure why. Everything looks fine to me; it might just be an issue of my code randomly breaking without me messing with anything again. Hopefully it works when it's being graded!
+I had several mini syntax issues that caused my code to break but other than that, this week's coding went pretty smoothly. The first of them was having an extra '{' where it wasn't supposed to be and another was not adding enough zeroes to my count variable. One other minor issue I had was that the border of my divs that held the cards were twice the width than I wanted them to be. This issue I still haven't fixed but it doesn't negatively affect the code at all, so I'm not worrying about it for the time being.
