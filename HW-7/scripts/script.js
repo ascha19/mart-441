@@ -1,5 +1,7 @@
 var viewfinderArray = new Array ();
 
+var counter = 0;
+
 //class for viewfinder info
 class GalleryViewfinder {
   constructor(title, author, year, image, description) {
@@ -39,9 +41,8 @@ function doTheArrayThing() {
 }
 
 function accessInfo() {
-  document.getElementById("info").innerHTML = viewfinderArray[0].toString();
-  document.getElementById("info").innerHTML = viewfinderArray[1].toString();
-  document.getElementById("info").innerHTML = viewfinderArray[2].toString();
-  document.getElementById("info").innerHTML = viewfinderArray[3].toString();
-  document.getElementById("info").innerHTML = viewfinderArray[4].toString();
+
+  document.getElementById("info").innerHTML = viewfinderArray[counter].toString();
+
+  counter++;
 }
