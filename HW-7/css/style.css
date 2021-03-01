@@ -1,0 +1,14 @@
+body {
+  background-image: url("../imgs/hexagon-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+}
+
+img {
+  max-width: 100%;
+}
+
+div {
+  background-color: white;
+}
