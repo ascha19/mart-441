@@ -1,61 +1,43 @@
 var viewfinderArray = new Array ();
 
-//class for image title
-class GalleryViewfinderTitle {
-  constructor(title) {
+//class for viewfinder info
+class GalleryViewfinder {
+  constructor(title, author, year, image, description) {
     this.title = title;
-  }
-
-  toString() {
-    return "Title: " + this.title;
-  }
-
-  get imageTitle() {
-    return this.title;
-  }
-}
-
-//class for image author/actor/etc
-class GalleryViewfinderAuthor {
-  constructor(author) {
     this.author = author;
-  }
-
-  toString() {
-    return "By " + this.author;
-  }
-
-  get imageAuthor() {
-    return this.author;
-  }
-}
-
-//class for image year
-class GalleryViewfinderYear {
-  constructor(year) {
     this.year = year;
-  }
-
-  toString() {
-    return "Year: " + this.title;
-  }
-
-  get imageYear() {
-    return this.year;
-  }
-}
-
-//class for image description
-class GalleryViewfinderDescription {
-  constructor(description) {
+    this.image = image;
     this.description = description;
   }
 
   toString() {
-    return "Description: " + this.description;
+
+        return ("Title: " + this.title + "<br>" + this.author + ", " + this.year + "<br>" + this.image + "<br>" + this.description);
+      }
+
+  get info() {
+
+    return (this.title, this.author, this.year, this.image, this.description);
+
   }
 
-  get imageDescription() {
-    return this.description;
-  }
+}
+
+//intializing array
+function doTheArrayThing() {
+  var viewfinder = new GalleryViewfinder("Image 01");
+  var viewfinder1 = new GalleryViewfinder("Image 02");
+  var viewfinder2 = new GalleryViewfinder("Image 03");
+  var viewfinder3 = new GalleryViewfinder("Image 04");
+  var viewfinder4 = new GalleryViewfinder("Image 05");
+
+  viewfinderArray.push(viewfinder);
+  viewfinderArray.push(viewfinder1);
+  viewfinderArray.push(viewfinder2);
+  viewfinderArray.push(viewfinder3);
+  viewfinderArray.push(viewfinder4);
+}
+
+function accessInfo() {
+  document.getElementById("info").innerHTML = viewfinderArray[0].toString();
 }
