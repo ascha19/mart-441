@@ -41,15 +41,19 @@ $(itsHim[0].theSelector).attr("src", itsHim[0].theImagePath);
 
 $("button").click(function(){
 
-  $(".words").fadeOut();
+  $(".words").fadeOut().fadeIn();
 
-  $("#special").toggle();
+  //$("#special").toggle();
     setInterval(moveObject, 1000);
 
   $(itsHim[0].theSelector).fadeOut().fadeIn();
 
   $("p").html(function(index, html) {
   return "We don't have to think it's funny when we feel like we need some extra comfort. I sometimes sing about that to children, but, as you know, I believe there's a child somewhere in each of us. We all have times like that--times when an extra measure of care is needed. We need comfort and so does everyone else. And it's nothing to be ashamed of. - Fred Rogers";
+})
+
+$("p").html(function(index, html) {
+return "Transitions are almost always signs of growth, but they can bring feelings of loss. To get somewhere new, we may have to leave somewhere else behind. - Fred Rogers";
 })
 
 });
