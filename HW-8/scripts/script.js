@@ -26,8 +26,8 @@ function initializeArray() {
   var mrr3 = new RogersInfo("#mrr", "./imgs/mister-rogers-03.jpg");
 
   itsHim.push(mrr);
-  itsHim2.push(mrr2);
-  itsHim3.push(mrr3);
+  itsHim.push(mrr2);
+  itsHim.push(mrr3);
   }
 
 $(document).ready(function(){
@@ -47,6 +47,10 @@ $("button").click(function(){
     setInterval(moveObject, 1000);
 
   $(itsHim[0].theSelector).fadeOut().fadeIn();
+
+  $("mrr").html(function(index, html) {
+  return "[" + (index + 1) + "]" + html;
+})
 
 });
 
