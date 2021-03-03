@@ -48,8 +48,8 @@ $("button").click(function(){
 
   $(itsHim[0].theSelector).fadeOut().fadeIn();
 
-  $("mrr").html(function(index, html) {
-  return "[" + (index + 1) + "]" + html;
+  $("p").html(function(index, html) {
+  return "We don't have to think it's funny when we feel like we need some extra comfort. I sometimes sing about that to children, but, as you know, I believe there's a child somewhere in each of us. We all have times like that--times when an extra measure of care is needed. We need comfort and so does everyone else. And it's nothing to be ashamed of. - Fred Rogers";
 })
 
 });
