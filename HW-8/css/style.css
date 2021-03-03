@@ -15,8 +15,15 @@ img {
 }
 
 .words{
-  background: lightgray;
+  background: rgb(246, 246, 246);
   width: 25%;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+p {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
 }
 
 #special{
