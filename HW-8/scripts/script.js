@@ -35,24 +35,23 @@ $(document).ready(function(){
   console.log(itsHim[0].theSelector);
   console.log(itsHim[0].theImagePath);
 
-$(itsHim[0].theSelector).attr("src", itsHim[0].theImagePath);
+  $(itsHim[0].theSelector).attr("src", itsHim[0].theImagePath);
 
-$("button").click(function(){
+  $("button").click(function(){
 
   $(".words").fadeOut().fadeIn();
 
   //$("#special").toggle();
-    setInterval(moveObject, 1000);
+    setInterval(moveObject, 5000);
 
-  $(itsHim[0].theSelector).fadeOut()//.fadeIn();
-
-  $(itsHim[1].theSelector).fadeIn();
+  $(itsHim[count].theSelector).fadeOut().fadeIn();
+  count++;
 
   $("p").html(function(index, html) {
   return "We don't have to think it's funny when we feel like we need some extra comfort. I sometimes sing about that to children, but, as you know, I believe there's a child somewhere in each of us. We all have times like that--times when an extra measure of care is needed. We need comfort and so does everyone else. And it's nothing to be ashamed of. - Fred Rogers";
 })
 
-$("p").html(function(index, html) {
+  $("p").html(function(index, html) {
 return "Transitions are almost always signs of growth, but they can bring feelings of loss. To get somewhere new, we may have to leave somewhere else behind. - Fred Rogers";
 })
 
@@ -61,5 +60,16 @@ return "Transitions are almost always signs of growth, but they can bring feelin
 });
 
 function moveObject() {
+
+  //$(itsHim[count].theSelector).attr("src", itsHim[count].theImagePath);
+  //$(itsHim[count].theSelector).fadeOut().fadeIn();
+  //count++;
+  //if (count >= itsHim.length){
+    //count = 0;
+  //}
+
+  //$("#first").toggle();
+  //$("#second").toggle();
+
   $("#trolley").animate({left:250}).animate({top:400}).animate({left:0}).animate({top:300});
 }
