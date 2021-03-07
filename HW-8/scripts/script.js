@@ -21,8 +21,8 @@ class RogersInfo {
 }
 
 function initializeArray() {
-  var mrr = new RogersInfo("#mrr", "./imgs/mister-rogers-01.jpg");
-  var mrr2 = new RogersInfo("#mrr", "./imgs/mister-rogers-02.jpg");
+  var mrr = new RogersInfo("#mrr", "./imgs/mister-rogers-01.jpg", "#first");
+  var mrr2 = new RogersInfo("#mrr", "./imgs/mister-rogers-02.jpg", "second");
 
   itsHim.push(mrr);
   itsHim.push(mrr2);
@@ -44,8 +44,7 @@ $(document).ready(function(){
   //$("#special").toggle();
     setInterval(moveObject, 5000);
 
-  $(itsHim[count].theSelector).fadeOut().fadeIn();
-  count++;
+  $(itsHim[0].theSelector).fadeOut().fadeIn();
 
   $("p").html(function(index, html) {
   return "We don't have to think it's funny when we feel like we need some extra comfort. I sometimes sing about that to children, but, as you know, I believe there's a child somewhere in each of us. We all have times like that--times when an extra measure of care is needed. We need comfort and so does everyone else. And it's nothing to be ashamed of. - Fred Rogers";
