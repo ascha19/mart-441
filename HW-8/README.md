@@ -8,4 +8,4 @@ Coding-wise, I looked up multiple ways to do what I wanted to but none of it wor
 
 While the coding itself seemed fairly easy this week, I had a lot of issues with it. The main issues were that I couldn't figure out how to switch between images and make the trolley move. Despite troubleshooting the best I could and attempting various different ways of writing the functions I was trying to use, nothing seemed to work; I couldn't make the trolley move at all and sometimes the same image would fade out and back in or disappear altogether, but never switch to the next image. I initially struggled to change the text as well but managed to find a way to do so that worked. I couldn't figure out how to do this method with three quotes, though, so I narrowed my images and quotes down to two.
 
-I reached out for help a couple of times over the week but didn't receive much feedback either way, so what I've turned in is how far I've gotten on my own.
+Even with the help I received, errors like making the trolley move and the images change didn't get resolved, so what I've turned in is how far I've gotten.
