@@ -1,5 +1,6 @@
 var mrRogersSelector = "#mrr";
 var itsHim = new Array();
+var count = 0;
 
 class RogersInfo {
   constructor(selector, imagePath) {
@@ -31,30 +32,32 @@ function initializeArray() {
 $(document).ready(function(){
   initializeArray();
   console.log(itsHim.length);
-  console.log(itsHim[0].toString());
-  console.log(itsHim[0].theSelector);
-  console.log(itsHim[0].theImagePath);
+  console.log(itsHim[count].toString());
+  console.log(itsHim[count].theSelector);
+  console.log(itsHim[count].theImagePath);
 
-  $(itsHim[0].theSelector).attr("src", itsHim[0].theImagePath);
+  $(itsHim[count].theSelector).attr("src", itsHim[count].theImagePath);
 
   $("button").click(function(){
-
-  $(".words").fadeOut().fadeIn();
-
-  //$("#special").toggle();
+    $(".words").fadeOut().fadeIn();
     setInterval(moveObject, 5000);
 
-  $(itsHim[0].theSelector).fadeOut().fadeIn();
+    $(itsHim[count].theSelector).fadeOut().fadeIn();
+    if (count > 1) {
+      count = 0;
+    }
+    else if (count <= 1){
+      count++;
+    }
+    console.log(count);
 
-  $("p").html(function(index, html) {
-  return "We don't have to think it's funny when we feel like we need some extra comfort. I sometimes sing about that to children, but, as you know, I believe there's a child somewhere in each of us. We all have times like that--times when an extra measure of care is needed. We need comfort and so does everyone else. And it's nothing to be ashamed of. - Fred Rogers";
-})
-
-  $("p").html(function(index, html) {
-return "Transitions are almost always signs of growth, but they can bring feelings of loss. To get somewhere new, we may have to leave somewhere else behind. - Fred Rogers";
-})
-
-});
+    $("p").html(function(index, html) {
+      return "We don't have to think it's funny when we feel like we need some extra comfort. I sometimes sing about that to children, but, as you know, I believe there's a child somewhere in each of us. We all have times like that--times when an extra measure of care is needed. We need comfort and so does everyone else. And it's nothing to be ashamed of. - Fred Rogers";
+    })
+    $("p").html(function(index, html) {
+      return "Transitions are almost always signs of growth, but they can bring feelings of loss. To get somewhere new, we may have to leave somewhere else behind. - Fred Rogers";
+    })
+  });
 
 });
 
