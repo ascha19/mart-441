@@ -6,28 +6,31 @@ $.fn.divStyles = function(){
   this.css("color", "rgb(82, 164, 114)");
   this.css("border-radius", "15px");
   this.css("padding", "10px");
+  this.css("text-align", "center");
   //this.css("opacity", "75%");
 };
 
 $.fn.textCenter = function(){
   this.css("text-align", "center");
+  this.css("color", "rgb(17, 108, 52)");
 };
 
+//Failed font attempts
+//$(".newFont").fontface({
+  //fontName : "FinkHeavy",
+  //fontStack : "Arial, sans-serif",
+  //fileName : "./fonts/.fink-heavy.ttf"
+//});
 //$("head").prepend("<style> @font-face{ font-family: 'finkHeavy'; src: url('file:///" + "./fonts/fink-heavy.ttf" + "'); } </style>");
 //$("#newFont").css("font-family", "finkHeavy");
 
 $(document).ready(function(){
-    //$("body").ready(function(){
         var bgUrl = "./imgs/animal-crossing-wp.jpg";
 
         $(".background").css("background-color", "rgb(187, 233, 205)");
         $(".background").css("background-image", "url(" + bgUrl + ")");
         $("#makeDivPretty").divStyles();
         $("#centerText").textCenter();
-
-        $("head").prepend("<style> @font-face{ font-family: 'finkHeavy'; src: url('file:///" + "./fonts/fink-heavy.ttf" + "'); } </style>");
-        $("#newFont").css("font-family", "finkHeavy");
-    //});
 });
 
 function loadDoc(){
