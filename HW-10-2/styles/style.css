@@ -1,0 +1,9 @@
+canvas {
+  background-color: rgb(255, 249, 201);
+}
+
+.borderStyles {
+  border-style: ridge;
+  border-color: rgb(74, 138, 224);
+  border-width: 10px;
+}
