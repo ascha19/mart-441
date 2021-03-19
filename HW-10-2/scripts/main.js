@@ -77,8 +77,8 @@ function getKey(event) {
   }
 
 //Move protag
-  var keyy = event.which || event.keyCode;
-  var letter = String.fromCharCode(keyy);
+  var char = event.which || event.keyCode;
+  var letter = String.fromCharCode(char);
 
   if (letter == "w") {
     moveUp() {
