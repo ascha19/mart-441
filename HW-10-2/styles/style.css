@@ -3,7 +3,15 @@ canvas {
 }
 
 .borderStyles {
-  border-style: ridge;
-  border-color: rgb(74, 138, 224);
+  border-style: groove;
+  border-color: rgb(129, 179, 246);
   border-width: 10px;
+}
+
+.buttonStyles {
+  width: 75px;
+  background-color: rgb(206, 225, 250);
+  border-color: rgb(129, 179, 246);
+  border-style: outset;
+  border-width: 3px;
 }
