@@ -8,10 +8,10 @@
 
     <title>HTML5 & Canvas</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <!--<script src="libs/jquery-3.3.1.min.js"></script>-->
-    <script src="./scripts/main.js"></script>
     <script src="./scripts/class.js"></script>
+
   </head>
 
   <body>
@@ -19,7 +19,16 @@
       <audio src="./audio/oldies-music-rain-asmr.mp3" controls="controls"></audio>
     </header>
 
-    <canvas id="canvasTime" class="borderStyles" height="250" width="300"></canvas>
+    <div id="explain">
+      <p>
+        Press start to play!
+      </p>
+    </div>
 
+    <canvas id="canvasTime" class="borderStyles" height="300" width="300"></canvas>
+    <br>
+    <button class="buttonStyles" onclick="gameStart();">Start</button>
+
+    <script src="./scripts/main.js"></script>
   </body>
   </html>
