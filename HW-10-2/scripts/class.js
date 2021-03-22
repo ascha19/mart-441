@@ -6,7 +6,6 @@ class Characters {
     this.width = width;
     this.color = color;
   }
-}
 
 setX(x) {
   this.x = x;
@@ -38,4 +37,6 @@ get theWidth() {
 }
 get theColor() {
   return this.color;
+}
+
 }

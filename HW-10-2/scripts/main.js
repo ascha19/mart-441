@@ -18,9 +18,9 @@ drawCharacters();
 
 //Create character instances
 function createCharacters() {
-  protag = new Square(x, y, 20, 20, "blue");
-  barrier = new Rectangle(bx, by, 10, 100, "green");
-  goal = new Square(gx, gy, 20, 20, "pink");
+  protag = new Characters(x, y, 20, 20, "blue");
+  barrier = new Characters(bx, by, 10, 100, "green");
+  goal = new Characters(gx, gy, 20, 20, "pink");
 }
 
 //Timer to move barrier
