@@ -13,4 +13,4 @@ Outside Resources:
 
 My main issue this week was making my objects appear on the canvas at all and finding examples to reference that didn't involve jQuery because I choose to not use it if it's not a requirement of the assignment.
 
-I also dealt with unnecessary syntax errors that wanted me to remove brackets that were important to the code.
+I also dealt with unnecessary syntax errors that wanted me to remove brackets that were important to the code. Even after making the fixes suggested to me when I asked for help, I kept getting more of the same curly bracket errors elsewhere. 
