@@ -45,4 +45,9 @@ class Villager{
   get mainColor() {
     return this.vColor;
   }
+
+//image
+  get image() {
+    return this.vSprite;
+  }
 }
