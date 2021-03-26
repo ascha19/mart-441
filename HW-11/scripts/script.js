@@ -23,7 +23,7 @@ function setup() {
   sprite1 = new Villager(100, 100, 50, 50, "red");
   sprite2 = new Villager(400, 400, 50, 50, "orange");
 
-  $.getJSON("./data/data.json", function(data) {
+  $.getJSON("./data/friendlies.json", function(data) {
     for(var i = 0; i < data.villagers.length; i++) {
       villagerArray.push(new Villager(data.villagers[i].x, data.villagers[i].y, data.villagers[i].w, data.villagers[i].h, data.villagers[i].color));
     }
