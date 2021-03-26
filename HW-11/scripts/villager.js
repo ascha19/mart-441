@@ -4,7 +4,7 @@ class Villager{
   constructor(vX, vY, vHeight, vWidth, vColor) {
     this.vX = vX;
     this.vY = vY;
-    this.vHeight = veHeight;
+    this.vHeight = vHeight;
     this.vWidth = vWidth;
     this.vColor = vColor;
   }

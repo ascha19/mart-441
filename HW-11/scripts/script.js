@@ -20,12 +20,12 @@ function setup() {
   canvas = document.getElementById("canvasTime");
   ctxt = canvas.getContext("2d");
 
-  sprite1 = new Sprite(100, 100, 50, 50, "red");
-  sprite2 = new Sprite(400, 400, 50, 50, "orange");
+  sprite1 = new Villager(100, 100, 50, 50, "red");
+  sprite2 = new Villager(400, 400, 50, 50, "orange");
 
   $.getJSON("./data/data.json", function(data) {
     for(var i = 0; i < data.villagers.length; i++) {
-      villagerArray.push(new Sprite(data.villagers[i].x, data.villagers[i].y, data.villagers[i].w, data.villagers[i].h, data.villagers[i].color));
+      villagerArray.push(new Villager(data.villagers[i].x, data.villagers[i].y, data.villagers[i].w, data.villagers[i].h, data.villagers[i].color));
     }
 
     drawVillager();
@@ -63,7 +63,7 @@ function getKey(event) {
   var test = collision(sprite1, sprite2);
   var test2 = false;
 
-  for(var i = 0; i < villagerArray.length; i++); {
+  for(var i = 0; i < villagerArray.length; i++) {
     test2 = collision(sprite1, villagerArray[i]);
 
     if(test2 == true) {
