@@ -1,7 +1,7 @@
-{villagers: [
-  {"x":500, "y":715, "h":50, "w":50, "color":"purple", "img":"../imgs/bruce.png"},
-  {"x":75, "y":100, "h":50, "w":50, "color":"pink", "img":"../imgs/ruby.png"},
-  {"x":150, "y":30, "h":50, "w":50, "color":"lightblue", "img":"../imgs/olaf.png"},
-  {"x":425, "y":650, "h":50, "w":50, "color":"beige", "img":"../imgs/mitzi.png"},
-  {"x":90, "y":700, "h":50, "w":50, "color":"paleyellow", "img":"../imgs/moe.png"}
+{"villagers": [
+  {"x":500, "y":715, "h":25, "w":25, "color":"purple", "img":"../imgs/bruce.png"},
+  {"x":75, "y":100, "h":25, "w":25, "color":"pink", "img":"../imgs/ruby.png"},
+  {"x":150, "y":30, "h":25, "w":25, "color":"lightblue", "img":"../imgs/olaf.png"},
+  {"x":425, "y":650, "h":25, "w":25, "color":"beige", "img":"../imgs/mitzi.png"},
+  {"x":90, "y":700, "h":25, "w":25, "color":"paleyellow", "img":"../imgs/moe.png"}
   ]}

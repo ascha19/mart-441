@@ -7,6 +7,7 @@ var direction;
 var questions;
 var happiness = 5;
 var villagerArray = [];
+var collision;
 
 $(document).ready(function() {
   setup();
@@ -20,8 +21,8 @@ function setup() {
   canvas = document.getElementById("canvasTime");
   ctxt = canvas.getContext("2d");
 
-  sprite1 = new Villager(100, 100, 50, 50, "red");
-  sprite2 = new Villager(400, 400, 50, 50, "orange");
+  sprite1 = new Villager(100, 100, 25, 25, "red");
+  sprite2 = new Villager(400, 400, 25, 25, "orange");
 
   $.getJSON("./data/friendlies.json", function(data) {
     for(var i = 0; i < data.villagers.length; i++) {
