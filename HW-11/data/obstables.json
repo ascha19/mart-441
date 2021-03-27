@@ -1,7 +1,7 @@
-{obstacles: [
-  {"x":600, "y":500, "h":50, "w":50, "color":"red", "img":"../imgs/rasher.png"},
-  {"x":200, "y":200, "h":50, "w":50, "color":"orange", "img":"../imgs/tank.png"},
-  {"x":375, "y":375, "h":50, "w":50, "color":"yellow", "img":"../imgs/rory.png"},
-  {"x":475, "y":175, "h":50, "w":50, "color":"green", "img":"../imgs/rizzo.png"}
-  {"x":450, "y":350, "h":50, "w":50, "color":"blue", "img":"../imgs/chester.png"}
+{"villagers": [
+  {"x":600, "y":500, "h":25, "w":25, "color":"red", "img":"../imgs/rasher.png"},
+  {"x":200, "y":200, "h":25, "w":25, "color":"orange", "img":"../imgs/tank.png"},
+  {"x":375, "y":375, "h":25, "w":25, "color":"yellow", "img":"../imgs/rory.png"},
+  {"x":475, "y":175, "h":25, "w":25, "color":"green", "img":"../imgs/rizzo.png"}
+  {"x":450, "y":350, "h":25, "w":25, "color":"blue", "img":"../imgs/chester.png"}
   ]}
