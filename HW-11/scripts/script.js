@@ -23,6 +23,10 @@ function setup() {
 
   sprite1 = new Villager(100, 100, 25, 25, "red");
   sprite2 = new Villager(400, 400, 25, 25, "orange");
+  sprite3 = new Villager(200, 200, 25, 25, "yellow");
+  sprite4 = new Villager(500, 500, 25, 25, "green");
+  sprite5 = new Villager(300, 300, 25, 25, "blue");
+  sprite6 = new Villager(600, 600, 25, 25, "purple");
 
   $.getJSON("./data/friendlies.json", function(data) {
     for(var i = 0; i < data.villagers.length; i++) {
@@ -61,7 +65,7 @@ function getKey(event) {
     direction = "right";
   }
 
-  var test = collision(sprite1, sprite2);
+  var test = collision(sprite1, sprite2, sprite3, sprite4, sprite5, sprite6);
   var test2 = false;
 
   for(var i = 0; i < villagerArray.length; i++) {
@@ -109,11 +113,24 @@ function moveLeft() {
 
 function drawVillager() {
   ctxt.clearRect(0, 0, 800, 600);
+  
   ctxt.fillStyle = sprite1.mainColor;
   ctxt.fillRect(sprite1.x, sprite1.y, sprite1.width, sprite1.height, sprite1.image);
 
   ctxt.fillStyle = sprite2.mainColor;
   ctxt.fillRect(sprite2.x, sprite2.y, sprite2.width, sprite2.height, sprite2.image);
+
+  ctxt.fillStyle = sprite3.mainColor;
+  ctxt.fillRect(sprite3.x, sprite3.y, sprite3.width, sprite3.height, sprite3.image);
+
+  ctxt.fillStyle = sprite4.mainColor;
+  ctxt.fillRect(sprite4.x, sprite4.y, sprite4.width, sprite4.height, sprite4.image);
+
+  ctxt.fillStyle = sprite5.mainColor;
+  ctxt.fillRect(sprite5.x, sprite5.y, sprite5.width, sprite5.height, sprite5.image);
+
+  ctxt.fillStyle = sprite6.mainColor;
+  ctxt.fillRect(sprite6.x, sprite6.y, sprite6.width, sprite6.height, sprite6.image);
 
   for(var i = 0; i < villagerArray[i].length; i++) {
     ctxt.fillStyle = villagerArray[i].mainColor;
