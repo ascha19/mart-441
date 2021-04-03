@@ -20,9 +20,13 @@
 
 <body class="bg">
 
-  <div><p>hi</p></div>
+  <header>
+    <audio src="./audio/16bit-study-music.mp3" autoplay="true" loop="true"></audio>
+  </header>
 
-  <canvas>
+  <div><h1>🔮 Potion Grab 🔮</h1></div>
+
+  <canvas class="canvasStyles">
   <script type="text/javascript">
 
       var config = {
@@ -49,6 +53,7 @@
       var platforms;
       var cursors;
       var score = 0;
+      var level = 1;
       var gameOver = false;
       var scoreText;
 
@@ -73,10 +78,14 @@
       //Ground + platforms
       platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
+      //Top right
       platforms.create(650, 400, 'ground');
-      platforms.create(100, 250, 'ground');
+      //Bottom left
+      platforms.create(75, 250, 'ground');
+      //Bottom right
       platforms.create(750, 220, 'ground');
-      //platforms.create(700, 75, 'ground');
+      //Top left
+      platforms.create(.10, 85, 'ground');
       platforms.create()
 
       //Player
@@ -109,7 +118,6 @@
 
       cursors = this.input.keyboard.createCursorKeys();
 
-      //  Some stars to collect, 12 in total, evenly spaced 70 pixels apart along the x axis
       stars = this.physics.add.group({
         key: 'star',
         repeat: 11,
@@ -125,8 +133,9 @@
 
       bombs = this.physics.add.group();
 
-      //Score stuff
-      scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: 'white' });
+      //Score + level stuff
+      scoreText = this.add.text(20, 10, 'score:0', { fontSize: '20px', fill: 'white' });
+      levelText = this.add.text(380, 10, 'level:1', { fontSize: '20px', fill: 'white' });
 
       //Collisions
       this.physics.add.collider(player, platforms);
@@ -172,6 +181,11 @@
       scoreText.setText('Score: ' + score);
 
       if (stars.countActive(true) === 0) {
+
+        //level change
+        level += 1;
+        levelText.setText('Level: ' + level);
+
         //New level stars
         stars.children.iterate(function (child) {
 
