@@ -9,23 +9,6 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-//var geometry = new THREE.BoxGeometry();
-//var material = new THREE.MeshBasicMaterial({
-//    color: 0x00ff00
-//});
-//var cube = new THREE.Mesh(geometry, material);
-//scene.add(cube);
-
-//camera.position.z = 5;
-
-//function animate() {
-//    requestAnimationFrame( animate );
-//    cube.rotation.x += 0.01;
-//cube.rotation.y += 0.01;
-//    renderer.render( scene, camera );
-//}
-//animate();
-
 //Creating snow
 var flakeCount = 9000;
 var flakeGeometry = new THREE.TetrahedronGeometry(0.035);
@@ -33,7 +16,7 @@ var flakeMaterial = new THREE.MeshPhongMaterial({color: 0xffffff});
 var snow = new THREE.Group();
 
 for (let i = 0; i < flakeCount; i++) {
-  var flakeMesh = new THREE.mesh(flakeGeometry, flakeMaterial);
+  var flakeMesh = new THREE.Mesh(flakeGeometry, flakeMaterial);
 
   flakeMesh.position.set(
     (Math.random() - 0.5)
