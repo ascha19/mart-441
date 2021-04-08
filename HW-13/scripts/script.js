@@ -26,6 +26,7 @@ document.body.appendChild(renderer.domElement);
 //}
 //animate();
 
+//Creating snow
 var flakeCount = 9000;
 var flakeGeometry = new THREE.TetrahedronGeometry(0.035);
 var flakeMaterial = new THREE.MeshPhongMaterial({color: 0xffffff});
@@ -47,6 +48,34 @@ scene.add(snow);
 
 var flakeArray = snow.children;
 
+//Pearl planet time, hopefully
+var bpGeometry = new THREE.SphereGeometry(5, 50, 50);
+var bpMaterial = new THREE.MeshPhongMaterial({
+  map: new THREE.ImageUtils.loadTexture("../media/pearl-texture.jpg"),
+  color: 0xaaaaaa,
+  specular: 0x333333,
+  shininess: 25
+});
+
+var bigPearl = new THREE.Mesh(bpGeometry, bpMaterial);
+
+scene.add(bigPearl);
+
+//Smaller orbiting pearl
+var spGeometry = new THREE.SphereGeometry(3.5, 50, 50);
+var spMaterial = new THREE.MeshPhongMaterial({
+  map: new THREE.ImageUtils.loadTexture("../media/pearl-texture-2.jpg")
+});
+
+var smallPearl = new THREE.Mesh(spGeometry, spMaterial);
+smallPearl.position.set(35, 0, 0);
+scene.add(smallPearl);
+
+var r = 35;
+var theta = 0;
+var dTheta = 2 * Math.PI / 1000;
+
+//Creating light sources
 var rightLight = new THREE.PointLight(0xffffff, 0.3, 0);
 rightLight.position.set(10, 20, 7);
 
@@ -59,6 +88,7 @@ scene.add(rightLight);
 scene.add(leftLight);
 scene.add(ambientLight);
 
+//Animation
 var animate = function() {
   requestAnimationFrame(animate);
 
@@ -81,10 +111,16 @@ var animate = function() {
     }
 
     snow.rotation.y -= 0.0000002;
+    bigPearl.rotation.y -= .0005;
+
+    theta += dTheta;
+    smallPearl.position.x = r * Math.cos(theta);
+    smallPearl.position.z = r * Math.sin(theta);
   }
 
   controls.update();
 
+//Camera moving the way I want it to, hopefully
   camera.position.x += (mouseX - camera.position.x) * 0.05;
   camera.position.y += (mouseY - camera.position.y) * 0.05;
   camera.lookAt(scene.position);
