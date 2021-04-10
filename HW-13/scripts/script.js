@@ -19,8 +19,8 @@ for (let i = 0; i < flakeCount; i++) {
   var flakeMesh = new THREE.Mesh(flakeGeometry, flakeMaterial);
 
   flakeMesh.position.set(
-    (Math.random() - 0.5)
-    (Math.random() - 0.5)
+    (Math.random() - 0.5),
+    (Math.random() - 0.5),
     (Math.random() - 0.5)
   );
 

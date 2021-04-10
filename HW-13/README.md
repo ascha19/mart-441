@@ -12,5 +12,5 @@ I looked up a bunch of examples of three.js being used to find inspiration for t
 - Minor syntax errors breaking code (capitalization, missing parentheses); fixed
 - Issues running loading and running OrbitControls.js; opted out of using said script
 - "(Math.random() - (intermediate value)) is not a function" error; attempted several syntax fixes in hope of fixing, to no avail
-- I didn't find a 3D model that fit my idea so I didn't implement one, but I did import textures on my geometry objects
+- I didn't find a 3D model that fit my idea and that I didn't have to pay for, so I didn't implement one, but I did import textures on my geometry objects
 - Code only showing black screen due to these errors
