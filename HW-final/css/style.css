@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "AmaticBold";
+  src: url("../fonts/amatic-bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "AmaticRegular";
+  src: url("../fonts/amatic-teg.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "ClintMarker";
+  src: url("../fonts/clint-marker.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "KingThings";
+  src: url("../fonts/kingthings-typewriter-2.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "SketchGothic";
+  src: url("../fonts/sketch-gothic-school.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "TravelingTypewriter";
+  src: url("../fonts/traveling-typewriter.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "WildySans";
+  src: url("../fonts/wildy-sans.ttf") format('truetype');
+}
