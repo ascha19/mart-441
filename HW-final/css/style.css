@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "AmaticRegular";
-  src: url("../fonts/amatic-teg.ttf") format('truetype');
+  src: url("../fonts/amatic-reg.ttf") format('truetype');
 }
 
 @font-face {
-  font-family: "ClintMarker";
-  src: url("../fonts/clint-marker.ttf") format('truetype');
+  font-family: "TentN";
+  src: url("../fonts/tentang-nanti.otf") format('opentype');
 }
 
 @font-face {
@@ -19,16 +19,23 @@
 }
 
 @font-face {
-  font-family: "SketchGothic";
-  src: url("../fonts/sketch-gothic-school.ttf") format('truetype');
+  font-family: "Charlotte";
+  src: url("../fonts/charlotte-southern.ttf") format('truetype');
 }
 
-@font-face {
-  font-family: "TravelingTypewriter";
-  src: url("../fonts/traveling-typewriter.ttf") format('truetype');
+body {
+  background-color: beige;
+  background-image: url('../imgs/freepik-vintagepaper.jpg');
+  text-align: center;
 }
 
-@font-face {
-  font-family: "WildySans";
-  src: url("../fonts/wildy-sans.ttf") format('truetype');
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Charlotte', serif;
+  font-size: 600%;
+  color: rgb(129, 35, 14);
+}
+
+p {
+  font-family: 'KingThings', serif;
+  font-size: 100%;
 }
