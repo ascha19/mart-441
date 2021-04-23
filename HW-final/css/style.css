@@ -1,16 +1,6 @@
 @font-face {
-  font-family: "AmaticBold";
-  src: url("../fonts/amatic-bold.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: "AmaticRegular";
-  src: url("../fonts/amatic-reg.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: "TentN";
-  src: url("../fonts/tentang-nanti.otf") format('opentype');
+  font-family: "Charlotte";
+  src: url("../fonts/charlotte-southern.ttf") format('truetype');
 }
 
 @font-face {
@@ -19,8 +9,13 @@
 }
 
 @font-face {
-  font-family: "Charlotte";
-  src: url("../fonts/charlotte-southern.ttf") format('truetype');
+  font-family: "TentN";
+  src: url("../fonts/tentang-nanti.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "TravelingTypewriter";
+  src: url("../fonts/traveling-typewriter.ttf") format('truetype');
 }
 
 body {
@@ -30,12 +25,32 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Charlotte', serif;
-  font-size: 600%;
+  font-family: 'KingThings', serif;
+  font-size: 500%;
   color: rgb(129, 35, 14);
 }
 
 p {
   font-family: 'KingThings', serif;
   font-size: 100%;
+}
+
+.text {
+  background: transparent;
+  border-style: solid;
+  border-color: rgb(129, 35, 14);
+  font-family: 'TravelingTypewriter', serif;
+  color: rgb(129, 35, 14);
+}
+
+.button {
+  opacity: 75%;
+  border-style: solid;
+  border-color: rgb(83, 69, 25);
+  font-family: 'KingThings', serif;
+}
+
+.button:hover {
+  opacity: 100%;
+  border-style: inset;
 }
