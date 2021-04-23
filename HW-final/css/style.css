@@ -47,6 +47,7 @@ p {
   border-color: rgb(129, 35, 14);
   font-family: 'TravelingTypewriter', serif;
   color: rgb(129, 35, 14);
+  width: 100px;
 }
 
 .button {
