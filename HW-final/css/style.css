@@ -21,6 +21,8 @@
 body {
   background-color: beige;
   background-image: url('../media/freepik-vintagepaper.jpg');
+  font-family: 'KingThings', serif;
+  font-size: 100%;
   text-align: center;
 }
 
@@ -60,4 +62,8 @@ p {
 .button:hover {
   opacity: 100%;
   border-style: inset;
+}
+
+.center {
+  margin: auto;
 }
